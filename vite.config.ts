@@ -45,6 +45,7 @@ export default defineConfig(async () => {
   const { cloudflare } = await import('@cloudflare/vite-plugin');
 
   return {
+    base: process.env.GITHUB_ACTIONS === 'true' ? '/kassi-deutsch/' : '/',
     css: { postcss: { plugins: [tailwindcss()] } },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
@@ -59,3 +60,4 @@ export default defineConfig(async () => {
     ],
   };
 });
+

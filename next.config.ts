@@ -5,8 +5,9 @@ const basePath = onGitHubPages ? '/kassi-deutsch' : '';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  assetPrefix: basePath || undefined,
   env: { NEXT_PUBLIC_BASE_PATH: basePath },
 };
 
 export default nextConfig;
+
+
