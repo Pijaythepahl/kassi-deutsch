@@ -1,0 +1,13 @@
+{
+  "name": "Kassi Deutsch",
+  "short_name": "Kassi",
+  "description": "Saksa-eesti sõnavaratreener igaks päevaks.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f3e8",
+  "theme_color": "#183f35",
+  "lang": "et",
+  "icons": [
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
